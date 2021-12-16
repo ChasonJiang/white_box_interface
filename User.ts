@@ -10,5 +10,11 @@ export interface UserCard extends UserBaseInfo{
 }
 
 export interface UserInfo extends UserCard{
-    
+    usersign:string;
+    usersex:string;
+    userbirth:number;
+    usermail:string;
+    attentionnumber:number;
+    fansnumber:number;
+    collectionnumber:number;
 }

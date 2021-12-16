@@ -3,6 +3,7 @@ import { TopicCard } from "./Topic";
 import { UserCard, UserInfo } from "./User";
 import { detailedgame, simplegame } from "./game";
 import { Comment,SubComment } from "./Comment";
+
 export interface PostResponse{
     post: Post;
     userCard: UserCard;
