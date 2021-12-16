@@ -5,6 +5,6 @@ export interface Topic{
 export interface TopicCard extends Topic{
     iconUrl:string;
     numberOfComments:number;
-    follow:boolean;
+    // follow:boolean;
     introduction?: string;
 }
