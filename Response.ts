@@ -10,18 +10,19 @@ export interface PostResponse{
 }
 
 export interface PostCardIndexResponse{
-    pid: string[];
+    success: boolean;
+    message?:string;
+    pid?: string[];
 }
 
 export interface PostCardResponse{
     postCards: PostCard[];
 }
 
-export interface PostCardIndexResponse{
-    pid: string[];
-}
 export interface PostCardDetailIndexResponse{
-    pid: string[];
+    success: boolean;
+    message?:string;
+    pid?: string[];
 }
 export interface PostCardDetailResponse{
     data:{
@@ -43,7 +44,9 @@ export interface PostSearchResponse{
 }
 
 export interface TopicCardIndexResponse{
-    tid:number[];
+    success: boolean;
+    message?:string;
+    tid?:number[];
 }
 
 export interface TopicCardResponse{
