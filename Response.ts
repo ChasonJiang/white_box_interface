@@ -51,7 +51,9 @@ export interface TopicCardResponse{
 }
 
 export interface CommentIndexResponse{
-    cid:string[];
+    success: boolean;
+    message?: string;
+    cid?:string[];
 }
 
 export interface CommentResponse{
