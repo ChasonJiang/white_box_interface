@@ -3,7 +3,7 @@ import { UserCard } from './User'
 
 export interface PostInfo{
     // user id
-    uid:number;
+    uid:string;
     // post id
     pid:string;
     releaseTime:string;
