@@ -1,4 +1,4 @@
-// import { HttpHeaders } from "@angular/common/http";
+import { HttpHeaders } from "@angular/common/http";
 import { detailedgame } from "./game";
 import { Post } from "./Post";
 import { UserBaseInfo } from "./User";
@@ -18,12 +18,12 @@ export interface RequestHead{
 
 }
 
-// export const httpOptions = {
-//     headers: new HttpHeaders({
-//       'Content-Type':  'application/json',
-//     //   Authorization: 'my-auth-token'
-//     })
-//   };
+export const httpOptions = {
+    headers: new HttpHeaders({
+      'Content-Type':  'application/json',
+    //   Authorization: 'my-auth-token'
+    })
+  };
 
 
 export interface PostRequestParams{
@@ -93,6 +93,8 @@ export interface UploadCommentRequestParams{
 
 
 
+//store
+
 //store=========================================================================
 export interface searchSimpleGameRequestParams{
     content:string;
@@ -119,8 +121,6 @@ export interface getstateRequestParams{
     gameid:number;
 }
 //===========================================================
-
-
 
 
 

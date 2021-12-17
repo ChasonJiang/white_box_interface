@@ -3,24 +3,26 @@ import { TopicCard } from "./Topic";
 import { UserCard, UserInfo } from "./User";
 import { detailedgame, simplegame } from "./game";
 import { Comment,SubComment } from "./Comment";
+
 export interface PostResponse{
     post: Post;
     userCard: UserCard;
 }
 
 export interface PostCardIndexResponse{
-    pid: string[];
+    success: boolean;
+    message?:string;
+    pid?: string[];
 }
 
 export interface PostCardResponse{
     postCards: PostCard[];
 }
 
-export interface PostCardIndexResponse{
-    pid: string[];
-}
 export interface PostCardDetailIndexResponse{
-    pid: string[];
+    success: boolean;
+    message?:string;
+    pid?: string[];
 }
 export interface PostCardDetailResponse{
     data:{
@@ -42,7 +44,9 @@ export interface PostSearchResponse{
 }
 
 export interface TopicCardIndexResponse{
-    tid:number[];
+    success: boolean;
+    message?:string;
+    tid?:number[];
 }
 
 export interface TopicCardResponse{
@@ -50,7 +54,9 @@ export interface TopicCardResponse{
 }
 
 export interface CommentIndexResponse{
-    cid:string[];
+    success: boolean;
+    message?: string;
+    cid?:string[];
 }
 
 export interface CommentResponse{
@@ -67,8 +73,7 @@ export interface UploadCommentResponse{
     success: boolean;
     message?: string;
 }
-
-// store
+// store======================================================================
 //查询
 export interface searchsimplegamelistResponse{
     success: boolean;
