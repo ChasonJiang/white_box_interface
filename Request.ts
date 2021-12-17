@@ -138,10 +138,10 @@ export interface RegisterRequestParams{
     //phone is uid 
     phone:string;
     pwd:string;
-    userName:string;
-    sex:string;
-    birthDay:string;
-    avatarUrl:string;   
+    // userName:string;
+    // sex:string;
+    // birthDay:string;
+    // avatarUrl:string;   
 }
 
 export interface EditUserInfoRequestParams{
