@@ -94,6 +94,8 @@ export interface UploadCommentRequestParams{
 
 
 //store
+
+//store=========================================================================
 export interface searchSimpleGameRequestParams{
     content:string;
 }
@@ -115,6 +117,13 @@ export interface adddetailedgameRequestParams{
 export interface buygameRequestParams{
     gameid:number;
 }
+export interface getstateRequestParams{
+    gameid:number;
+}
+//===========================================================
+
+
+
 export interface FollowRequestParams{
     // follower_uid:number;
     follow_uid:number;

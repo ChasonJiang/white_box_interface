@@ -68,8 +68,7 @@ export interface UploadCommentResponse{
     success: boolean;
     message?: string;
 }
-
-// store
+// store======================================================================
 //查询
 export interface searchsimplegamelistResponse{
     success: boolean;
@@ -100,6 +99,11 @@ export interface buygameresultResponse{
     success: boolean;
     message?: string;
 }
+export interface getstateResponse{
+    success:boolean;
+    state:boolean;
+}
+//----------------------------------------------------------------
 export interface FollowResponse{
     success: boolean;
     message?: string;
