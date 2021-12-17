@@ -99,6 +99,11 @@ export interface buygameresultResponse{
     success: boolean;
     message?: string;
 }
+export interface getstateResponse{
+    success:boolean;
+    state:boolean;
+}
+//----------------------------------------------------------------
 export interface FollowResponse{
     success: boolean;
     message?: string;
