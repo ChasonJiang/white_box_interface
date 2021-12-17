@@ -118,3 +118,8 @@ export interface LoginResponse{
     message?: string;
     userInfo?:UserInfo;
 }
+export interface RegisterResponse{
+    success: boolean;
+    message?: string;
+    userInfo?:UserInfo;
+}

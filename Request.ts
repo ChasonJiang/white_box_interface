@@ -131,5 +131,13 @@ export interface FollowRequestParams{
 }
 
 export interface LoginRequestParams{
+    phone:number;
     pwd:string;
+}
+export interface RegisterRequestParams{
+    phone:number;
+    pwd:string;
+    userName:string;
+    birthDay:string;
+    avatarUrl:string;   
 }
