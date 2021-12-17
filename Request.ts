@@ -13,7 +13,7 @@ export interface Requester<T>{
 export interface RequestHead{
     // uid: uid of the requester 
     // type: type of the request eg: PostCardList,Post, CommentList, PostCardDetailList, etc.
-    uid?: number;
+    uid?: string;
     type: string;
 
 }
@@ -126,16 +126,16 @@ export interface getstateRequestParams{
 
 export interface FollowRequestParams{
     // follower_uid:number;
-    follow_uid:number;
+    follow_uid:string;
     follow:boolean;
 }
 
 export interface LoginRequestParams{
-    phone:number;
+    phone:string;
     pwd:string;
 }
 export interface RegisterRequestParams{
-    phone:number;
+    phone:string;
     pwd:string;
     userName:string;
     birthDay:string;

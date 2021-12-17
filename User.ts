@@ -1,5 +1,5 @@
 export interface UserBaseInfo{
-    uid: number;
+    uid: string;
     userName: string;
 }
 export interface UserCard extends UserBaseInfo{
