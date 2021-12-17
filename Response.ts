@@ -116,10 +116,15 @@ export interface FollowResponse{
 export interface LoginResponse{
     success: boolean;
     message?: string;
+    token?: string;
     userInfo?:UserInfo;
 }
 export interface RegisterResponse{
     success: boolean;
     message?: string;
     userInfo?:UserInfo;
+}
+export interface EditUserResponse{
+    success:boolean,
+    message?:string;
 }
