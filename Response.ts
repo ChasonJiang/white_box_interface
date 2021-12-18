@@ -43,6 +43,12 @@ export interface PostSearchResponse{
     pid?: string[];
 }
 
+export interface TopicCardSearchResponse{
+    success: boolean;
+    message?: string;
+    tid?: string[];
+}
+
 export interface TopicCardIndexResponse{
     success: boolean;
     message?:string;

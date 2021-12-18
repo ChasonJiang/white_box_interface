@@ -66,11 +66,14 @@ export interface SubCommentRequestParams{
     sub_cid:string[];
 }
 
-export interface PostSearchRequestParams{
-    tid:number;
-    content:string;
+export interface PostSearchRequestParams extends SearchRequestParams{
+    tid?:number;
+    // content:string;
 }
 
+export interface TopicCardSearchRequestParams extends SearchRequestParams{
+    // content:string;
+}
 
 
 export interface SimpleGameSearchRequestParams{
