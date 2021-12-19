@@ -161,7 +161,6 @@ export interface EditUserInfoRequestParams{
 
 export interface LogoutRequestParams{
     uid:string;
-    pwd:string;
     token:string;
 }
 
