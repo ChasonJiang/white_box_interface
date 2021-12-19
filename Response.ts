@@ -76,6 +76,7 @@ export interface simplegamelistResponse{
 export interface storeShowImgResponse{
     success: boolean;
     storeShowImg?:string[];
+    gid?:number[];
 }
 
 export interface getdetailedgameResponse{
