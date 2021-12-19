@@ -116,5 +116,5 @@ export interface ResponseMessage{
     success: boolean;
     message?:string;
 }
-export interface LoginValidation extends ResponseMessage{
+export interface LoginValidationResponse extends ResponseMessage{
 }
