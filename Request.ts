@@ -168,3 +168,12 @@ export interface LoginValidationRequestParams{
     uid:string;
     token:string;
 }
+
+export interface MomentIndexRequestParams{
+    uid:string;
+}
+
+export interface MomentRequestParams{
+    uid:string;
+    pid:string[];
+}

@@ -118,3 +118,11 @@ export interface ResponseMessage{
 }
 export interface LoginValidationResponse extends ResponseMessage{
 }
+
+export interface MomentIndexResponse extends ResponseMessage{
+    pid?: string[],
+}
+
+export interface MomentResponse {
+    postCardsDetail: PostCardDetail[],
+}
