@@ -158,3 +158,14 @@ export interface EditUserInfoRequestParams{
     signature?:string;
     email?:string;   
 }
+
+export interface LogoutRequestParams{
+    uid:string;
+    pwd:string;
+    token:string;
+}
+
+export interface LoginValidationRequestParams{
+    uid:string;
+    token:string;
+}

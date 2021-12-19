@@ -9,9 +9,7 @@ export interface PostResponse{
     userCard: UserCard;
 }
 
-export interface PostCardIndexResponse{
-    success: boolean;
-    message?:string;
+export interface PostCardIndexResponse extends ResponseMessage{
     pid?: string[];
 }
 
@@ -19,9 +17,7 @@ export interface PostCardResponse{
     postCards: PostCard[];
 }
 
-export interface PostCardDetailIndexResponse{
-    success: boolean;
-    message?:string;
+export interface PostCardDetailIndexResponse extends ResponseMessage{
     pid?: string[];
 }
 export interface PostCardDetailResponse{
@@ -31,27 +27,19 @@ export interface PostCardDetailResponse{
     }[];
 }
 
-export interface UserDetailsResponse{
-    success: boolean;
-    message?: string;
+export interface UserDetailsResponse extends ResponseMessage{
     userInfo?: UserInfo;
 }
 
-export interface PostSearchResponse{
-    success: boolean;
-    message?: string;
+export interface PostSearchResponse extends ResponseMessage{
     pid?: string[];
 }
 
-export interface TopicCardSearchResponse{
-    success: boolean;
-    message?: string;
+export interface TopicCardSearchResponse extends ResponseMessage{
     tid?: string[];
 }
 
-export interface TopicCardIndexResponse{
-    success: boolean;
-    message?:string;
+export interface TopicCardIndexResponse extends ResponseMessage{
     tid?:number[];
 }
 
@@ -59,9 +47,7 @@ export interface TopicCardResponse{
     topicCards: TopicCard[];
 }
 
-export interface CommentIndexResponse{
-    success: boolean;
-    message?: string;
+export interface CommentIndexResponse extends ResponseMessage{
     cid?:string[];
 }
 
@@ -71,13 +57,9 @@ export interface CommentResponse{
 export interface SubCommentResponse{
     subComments:SubComment[]
 }
-export interface UploadPostResponse{
-    success: boolean;
-    message?: string;
+export interface UploadPostResponse extends ResponseMessage{
 }
-export interface UploadCommentResponse{
-    success: boolean;
-    message?: string;
+export interface UploadCommentResponse extends ResponseMessage{
 }
 // store======================================================================
 //查询
@@ -115,22 +97,24 @@ export interface getstateResponse{
     state:boolean;
 }
 //----------------------------------------------------------------
-export interface FollowResponse{
-    success: boolean;
-    message?: string;
+export interface FollowResponse extends ResponseMessage{
 }
-export interface LoginResponse{
-    success: boolean;
-    message?: string;
+export interface LoginResponse extends ResponseMessage{
     token?: string;
     userInfo?:UserInfo;
 }
-export interface RegisterResponse{
-    success: boolean;
-    message?: string;
+export interface RegisterResponse extends ResponseMessage{
     userInfo?:UserInfo;
 }
-export interface EditUserResponse{
-    success:boolean,
+export interface EditUserResponse extends ResponseMessage{
+}
+
+export interface LogoutResponse extends ResponseMessage{
+}
+
+export interface ResponseMessage{
+    success: boolean;
     message?:string;
+}
+export interface LoginValidation extends ResponseMessage{
 }
