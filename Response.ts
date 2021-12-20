@@ -125,6 +125,6 @@ export interface MomentIndexResponse extends ResponseMessage{
 }
 
 export interface MomentResponse {
-    postCardsDetail: PostCardDetail[],
+    postCardsDetail?: PostCardDetail[],
     userInfo?: UserInfo;
 }
